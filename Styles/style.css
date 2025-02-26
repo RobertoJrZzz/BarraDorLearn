@@ -1,0 +1,200 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Bebas Neue", serif;
+}
+
+#info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px;
+    flex-wrap: wrap;
+}
+
+.infotext{
+    font-size: 30px;
+    max-width: 600px;
+}
+
+#RedeIMG2{
+    transition: all 0.9s ease;
+    height: 450px;
+    border-radius: 20%;
+}
+
+#RedeIMG2:hover{
+    transform: scale(1.3);
+}
+
+#RedeIMG {
+    height: 99px;
+}
+
+.listagem {
+    list-style-type: none;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: all 0.9s ease;
+    border-radius: 10px;
+}
+
+.listagem:hover {
+    color: aqua;
+    text-decoration: overline;
+    transform: scale(0.9);
+}
+
+#list {
+    flex-direction: row;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.list-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-cont{
+    font-size: 50px;
+}
+
+.cont{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.9s ease;
+}
+
+.cont:hover {
+    color: aqua;
+    text-decoration: overline;
+    transform: scale(0.9);
+}
+
+
+
+/* Links de impressoras e desktop ocultos inicialmente */
+#impressoras-links,
+#desktop-links {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.listagem2 {
+    list-style-type: none;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: all 0.9s ease;
+    border-radius: 10px;
+}
+
+.listagem2:hover {
+    color: aqua;
+    transform: scale(0.9);
+}
+
+.organiza {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 55px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+
+.list:hover {
+    color: aqua;
+    text-decoration: underline;
+    transform: scale(0.9);
+}
+
+/* Responsivo para telas pequenas */
+@media screen and (max-width: 768px) {
+
+    #RedeIMG2 {
+        height: 240px;
+    }
+
+    #impressoras-links,
+    #desktop-links {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .listagem2 {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .organiza {
+        padding: 40px;
+    }
+
+    .list {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+/* Responsivo para telas muito pequenas */
+@media screen and (max-width: 480px) {
+
+    .infotext {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #RedeIMG2 {
+        height: 250px;
+    }
+}
+    .listagem {
+        font-size: 16px;
+    }
+
+    .listagem2 {
+        font-size: 16px;
+    }
+
+    .list {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .organiza {
+        padding: 30px;
+    
+    }
+
+    #RedeIMG {
+        height: 80px; /* Ajuste no tamanho da logo */
+    }
+}
