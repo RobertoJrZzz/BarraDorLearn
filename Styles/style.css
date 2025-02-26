@@ -142,7 +142,7 @@ body {
 @media screen and (max-width: 768px) {
 
     #RedeIMG2 {
-        height: 240px;
+        height: 120px;
     }
 
     #impressoras-links,
@@ -176,7 +176,7 @@ body {
     }
 
     #RedeIMG2 {
-        height: 250px;
+        height: 140px;
     }
 }
     .listagem {
